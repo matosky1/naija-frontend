@@ -40,7 +40,7 @@
 // }
 import React, { useEffect, useState } from "react";
 import { fetchProducts } from "../api";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/productCard";
 import "../styles/Collection.css";
 
 export default function Collection() {

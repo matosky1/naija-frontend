@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/about.css";
+import "../styles/About.css";
 
 // Example image imports (replace with your actual files from assets)
 import who2 from "../assets/who2.jpeg";

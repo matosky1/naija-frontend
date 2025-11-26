@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import '../styles/productcard.css';
+import '../styles/productCard.css';
 import { CartContext } from '../pages/cartContext';
 
 export default function ProductCard({ product }) {

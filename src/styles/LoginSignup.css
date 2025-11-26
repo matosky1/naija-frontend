@@ -1,0 +1,171 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #000; /* black background */
+}
+
+.auth-box {
+  background: #111;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.auth-box h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #222;
+  color: white;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #ff6b00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-box button:hover {
+  background: #e65c00;
+}
+
+.switch-text {
+  color: white;
+  margin-top: 15px;
+}
+
+.switch-text span {
+  color: #ff6b00;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+}
+
+.success-text {
+  color: #00ff7f;
+  font-size: 14px;
+}
+
+.forgot-password {
+  text-align: right;
+  color: #ff9800;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #ffa733;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end; /* ✅ slides up from bottom */
+  justify-content: center;
+  z-index: 999;
+  animation: fadeOverlay 0.3s ease forwards;
+}
+
+/* Modal Bottom Sheet Style */
+.modal-content {
+  background: #fff;
+  width: 100%;
+  max-width: 450px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(100%);
+  animation: slideUp 0.4s ease-out forwards;
+}
+
+.modal-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.modal-content button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+  background: #333;
+}
+
+/* 🔥 Slide and Fade Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 1.5rem;
+    border-radius: 14px 14px 0 0;
+  }
+  .modal-content h3 {
+    font-size: 1.2rem;
+  }
+  .modal-content button {
+    width: 100%;
+  }
+}

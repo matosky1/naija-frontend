@@ -1,0 +1,70 @@
+/* Base body styles */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  background-color: #fff;
+  animation: fadeInBody 0.6s ease-in-out;
+  line-height: 1.6;
+}
+
+/* Fade-in animation */
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Anchor links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #eab869; /* Optional highlight color */
+}
+
+/* Main layout */
+main {
+  min-height: 80vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+}

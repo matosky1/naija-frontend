@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { CartContext } from "../pages/cartContext"; // ✅ Import CartContext
-import "../styles/header.css";
+import "../styles/Header.css";
 
 export default function Header() {
   const [user, setUser] = useState(null);

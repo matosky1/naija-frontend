@@ -64,23 +64,35 @@
 
 /* Mobile tweaks */
 @media (max-width: 768px) {
+  .footer {
+    padding: 1rem 0.5rem;
+  }
+
+  .footer-container {
+    gap: 0.5rem;
+  }
+
   .footer-logo {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
   }
 
   .footer-links {
-    gap: 1rem;
+    gap: 0.6rem;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 0.5rem;
   }
 
   .footer-icon {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .footer-text {
-    font-size: 0.85rem;
-    padding: 0 1rem;
-    text-align: center;
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+    line-height: 1.4;
+    margin-top: 0.3rem;
   }
 }
+

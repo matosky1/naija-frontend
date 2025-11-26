@@ -17,25 +17,25 @@ export default function Home() {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        <img
-          src={who3} // Replace with your hero image
-          alt="Fall 25 Collection"
-          className="hero-img"
-        />
-        <h1 className="hero-text">FALL25 collection</h1>
-      </section>
+  <img src={who3} alt="Naija Hero" className="hero-img" />
+  <div className="hero-overlay">
+    <h1>NAIJA STREET FASHION</h1>
+    <p>Curated for comfort. Designed for confidence.</p>
+  </div>
+</section>
+
 
       {/* Gallery Section */}
       <section className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-         <div className="gallery-grid">
+        
           <img src={gallery1} alt="Gallery look 1" />
            <img src={gallery2} alt="Gallery look 2" />
            <img src={gallery3} alt="Gallery look 3" />
            <img src={gallery4} alt="Gallery look 4" />
              <img src={gallery5} alt="Gallery look 5" />
-</div>
+
 
         </div>
       </section>
@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Collection Section */}
       <section className="collection">
-        <h2>FALL 25 Collection</h2>
+        
         <div className="collection-grid">
           <img src={gallery6} alt="Gallery look 1" />
            <img src={gallery7} alt="Gallery look 2" />
